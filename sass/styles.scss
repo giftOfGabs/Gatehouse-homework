@@ -30,10 +30,10 @@ img{max-width:100%;}
 .left{float:left;}
 .right{float:right;}
 label{display: block;margin:10px 0 0;}
-.container {width: 300px;border: 2px solid #ccc;margin:auto;padding:5px;}
-.widget{height: 250px;overflow-y:scroll;position: absolute;top:50%;left:50%;margin:-125px 0 0 -150px;
+.container {width: 300px;border: 2px solid #ccc;margin:auto;padding:5px;position: absolute;top:50%;left:50%;margin:-110px 0 0 -150px;}
+.widget{height: 250px;overflow-y:scroll;margin:-125px 0 0 -150px;
 	h1{margin:0 0 5px;text-align:center;font-family: $fontStack;font-size:20px;font-weight:bold;color:$darkGrey;}
-	h2{margin: 0 0 10px; text-align:center;font-family: $fontStack;font-size:18px;color:$blueColor;font-size:16px;}
+	h2, h2 a{margin: 0 0 10px; text-align:center;font-family: $fontStack;font-size:18px;color:$blueColor;font-size:16px;}
 	a{display: block;margin:0 auto 5px;}
 }
 button{@include btn(30px,2.5%)}

@@ -37,18 +37,15 @@ $(document).ready(function(){
         var imgSplit = img.split('>');
         var imgUrl = imgSplit[0];
         var desc = business.description;
-        console.log(desc);
-
+        var link = business.link;
         $('.title').text(compName);
-        $('.subtitle').text(cat);
+        $('.subtitle').html('<a href="'+link+'">'+cat+'</a>');
         $('.imgWrap').html('<img src='+imgUrl+'%3E.jpg />');
         $('.description').html(desc);
 
     });
 });
 </script>
-
-
 <?php
 require('layout/footer.php');
 ?>
