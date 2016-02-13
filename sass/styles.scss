@@ -29,13 +29,16 @@ img{max-width:100%;}
 .clear{clear:both;}
 .left{float:left;}
 .right{float:right;}
+h1{font-family: $fontStack;font-size:20px;font-weight:bold;color:$darkGrey;}
+h2{font-family: $fontStack;font-size:18px;color:$darkGrey;}
 label{display: block;margin:10px 0 0;}
-.container {width: 300px;border: 2px solid #ccc;margin:auto;padding:5px;position: absolute;top:50%;left:50%;margin:-110px 0 0 -150px;}
+.container {width: 300px;border: 2px solid #ccc;margin:auto;padding:5px;position: absolute;top:50%;left:50%;margin:-120px 0 0 -150px;}
 .widget{height: 250px;overflow-y:scroll;margin:-125px 0 0 -150px;
-	h1{margin:0 0 5px;text-align:center;font-family: $fontStack;font-size:20px;font-weight:bold;color:$darkGrey;}
-	h2, h2 a{margin: 0 0 10px; text-align:center;font-family: $fontStack;font-size:18px;color:$blueColor;font-size:16px;}
+	h1{margin:0 0 5px;text-align:center;}
+	h2, h2 a{margin: 0 0 10px; text-align:center;color:$blueColor;font-size:16px;}
 	a{display: block;margin:0 auto 5px;}
 }
+.error h2{text-align:center; color:red;}
 button{@include btn(30px,2.5%)}
 input[type="text"]{@include formFields(30px);}
 #businessSearch {margin:10px auto;

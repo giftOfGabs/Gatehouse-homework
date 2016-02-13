@@ -54,10 +54,10 @@ class insertInfo {
 			require('layout/footer.php');
 		}else{
 			require('layout/header.php');
-  			echo "<div class=\"container\">
+  			echo "<div class=\"error\">
           	<h2>Please enter a valid email</h2>
         	</div>";
-  			require('form.php');
+  			require('layout/formFields.php');
   			require('layout/footer.php');
 		}
 		mysql_close($link);

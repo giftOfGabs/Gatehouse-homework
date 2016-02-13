@@ -28,6 +28,19 @@ img {
   float: right;
 }
 
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #58595b;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #58595b;
+}
+
 label {
   display: block;
   margin: 10px 0 0;
@@ -41,7 +54,7 @@ label {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -110px 0 0 -150px;
+  margin: -120px 0 0 -150px;
 }
 
 .widget {
@@ -52,22 +65,21 @@ label {
 .widget h1 {
   margin: 0 0 5px;
   text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  color: #58595b;
 }
 .widget h2, .widget h2 a {
   margin: 0 0 10px;
   text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
   color: #009ccf;
   font-size: 16px;
 }
 .widget a {
   display: block;
   margin: 0 auto 5px;
+}
+
+.error h2 {
+  text-align: center;
+  color: red;
 }
 
 button {
