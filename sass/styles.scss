@@ -1,0 +1,44 @@
+$fontStack: 'Roboto', sans-serif;
+$blueColor: #009ccf;
+$darkGrey: #58595b;
+$ltGrey: #c7c7c7;
+@mixin btn ($height, $btnPad) {
+	color:#fff;
+	border:0 none;
+	background:$blueColor;
+	padding: 0 $btnPad;
+	line-height: $height;
+	text-align: center;
+	font-size:18px;
+	font-family: $fontStack;
+	font-weight:bold;
+	vertical-align: bottom
+}
+@mixin formFields ($height){
+	height:$height;
+	background-color:#fff;
+	color:$darkGrey;
+	padding: 0 10px;
+	font-size:12px;
+	border:1px solid $ltGrey;
+}
+*,p{font-family: $fontStack;font-size:14px;}
+a{color:$blueColor;font-weight:bold;}
+.imgWrap{margin: 0 0 5px;}
+img{max-width:100%;}
+.clear{clear:both;}
+.left{float:left;}
+.right{float:right;}
+label{display: block;margin:10px 0 0;}
+.container {width: 300px;border: 2px solid #ccc;margin:auto;padding:5px;}
+.widget{height: 250px;overflow-y:scroll;position: absolute;top:50%;left:50%;margin:-125px 0 0 -150px;
+	h1{margin:0 0 5px;text-align:center;font-family: $fontStack;font-size:20px;font-weight:bold;color:$darkGrey;}
+	h2{margin: 0 0 10px; text-align:center;font-family: $fontStack;font-size:18px;color:$blueColor;font-size:16px;}
+	a{display: block;margin:0 auto 5px;}
+}
+button{@include btn(30px,2.5%)}
+input[type="text"]{@include formFields(30px);}
+#businessSearch {margin:10px auto;
+	button{width: 75px;float:right;}
+	input{width: calc(100% - 80px);}
+}
